@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #F1EEE9;
+}
+
+h2, h3 {
+    text-shadow: 3px 3px #000000;
+}
+
+body{
+    background-color: #15133C;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+}
+
+#title {
+    margin-top: 150px;
+    margin-bottom: 25px;
+}
+
+#quote-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border: 5px solid #EC994B;
+    width: 70%;
+    padding: 20px;
+    box-shadow: 0 0 5px black inset, 0 0 5px black;
+}
+
+#author{
+    margin-top: 20px;
+}
+
+#play-audio, #pause-audio{
+    width: 50px;
+    height: 50px;
+    color: #EC994B;
+    border: 3px solid #EC994B;
+    border-radius: 50%;
+    background-color: #15133C;
+    margin-bottom: 25px;
+    padding: 2px 5px;
+    transition: all 0.5s;
+}
+
+#play-audio:hover, #pause-audio:hover{
+    background-color: #EC994B;
+    transition: all 0.5s;
+
+}
+
+#pause-audio{
+    display: none;
+}
+
+#play-audio > i, #pause-audio > i{
+    color: #EC994B;
+    transition: all 0.5s;
+}
+
+#play-audio:hover > i, #pause-audio:hover > i {
+    color: #15133C;
+    transition: all 0.5s;
+}
