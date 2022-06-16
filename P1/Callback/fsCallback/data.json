@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "Thalia",
+        "codeName": "Black Undur - Undur",
+        "gender": "Female",
+        "age": 20
+    },
+    {
+        "id": 2,
+        "name": "Ilham",
+        "codeName": "recca",
+        "gender": "Male",
+        "age": 24
+    },
+    {
+        "id": 3,
+        "name": "Rudy",
+        "codeName": "Dull Shooter",
+        "gender": "Male",
+        "age": 25
+    },
+    {
+        "id": 4,
+        "name": "Salsa",
+        "codeName": "Mawar Hitam",
+        "gender": "Female",
+        "age": 21
+    },
+    {
+        "id": 5,
+        "name": "Hendri",
+        "codeName": "Axl",
+        "gender": "Male",
+        "age": 23
+    },
+    {
+        "id": 6,
+        "name": "Jihan",
+        "codeName": "Anya",
+        "gender": "Female",
+        "age": 20
+    }
+]
