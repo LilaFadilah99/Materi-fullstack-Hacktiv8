@@ -1,0 +1,50 @@
+[
+    {
+        "id": 2,
+        "title": "Diri",
+        "artist": "Tulus",
+        "duration": 244,
+        "upvote": 100,
+        "downvote": 0
+    },
+    {
+        "id": 3,
+        "title": "Hati - Hati Di Jalan",
+        "artist": "Tulus",
+        "duration": 243,
+        "upvote": 100,
+        "downvote": 0
+    },
+    {
+        "id": 4,
+        "title": "Morning Coffe",
+        "artist": "Chevy & Nalba",
+        "duration": 143,
+        "upvote": 100,
+        "downvote": 0
+    },
+    {
+        "id": 5,
+        "title": "Until I Found You",
+        "artist": "Stephen Sanchez",
+        "duration": 190,
+        "upvote": 0,
+        "downvote": 0
+    },
+    {
+        "id": 6,
+        "title": "Indonesia Raya",
+        "artist": "W.R. Soepratman",
+        "duration": 120,
+        "upvote": 0,
+        "downvote": 0
+    },
+    {
+        "id": 7,
+        "title": "Indonesia Raya",
+        "artist": "W.R. Soepratman",
+        "duration": 120,
+        "upvote": 0,
+        "downvote": 0
+    }
+]
