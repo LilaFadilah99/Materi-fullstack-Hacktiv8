@@ -6,13 +6,11 @@
         "customers": [
             {
                 "name": "John",
-                "ktp": "123456789",
-                "depositAmount": 15000
+                "ktp": "123456789"
             },
             {
                 "name": "Jane",
-                "ktp": "012345678",
-                "depositAmount": 30000
+                "ktp": "012345678"
             }
         ]
     },
@@ -23,19 +21,28 @@
         "customers": [
             {
                 "name": "Johnny",
-                "ktp": "323456789",
-                "depositAmount": 50000
+                "ktp": "323456789"
             },
             {
                 "name": "Jennie",
-                "ktp": "512345678",
-                "depositAmount": 40000
+                "ktp": "512345678"
             },
             {
                 "name": "Jake",
-                "ktp": "612345678",
-                "depositAmount": 5000000
+                "ktp": "612345678"
             }
         ]
+    },
+    {
+        "id": 3,
+        "name": "Bank Mandiri",
+        "type": "NationalBank",
+        "customers": []
+    },
+    {
+        "id": 4,
+        "name": "Bank Mandiri",
+        "type": "NationalBank",
+        "customers": []
     }
 ]
