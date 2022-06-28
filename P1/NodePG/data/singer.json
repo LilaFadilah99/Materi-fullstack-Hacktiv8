@@ -1,0 +1,17 @@
+[
+    {
+        "name" : "Tulus",
+        "gender" : "Male",
+        "age" : 34
+    },
+    {
+        "name" : "Raisa",
+        "gender" : "Female",
+        "age" : 32
+    },
+    {
+        "name" : "Sam Fischer",
+        "gender" : "Male",
+        "age" : 30
+    }
+]

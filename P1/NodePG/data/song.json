@@ -1,0 +1,22 @@
+[
+    {
+        "title" : "Diri",
+        "genre" : "POP",
+        "SingerId" : 1
+    },
+    {
+        "title" : "Hati - hati di Jalan",
+        "genre" : "POP",
+        "SingerId" : 1
+    },
+    {
+        "title" : "Lagu Untukmu",
+        "genre" : "POP",
+        "SingerId" : 2
+    },
+    {
+        "title" : "For Now",
+        "genre" : "POP",
+        "SingerId" : 3
+    }
+]
