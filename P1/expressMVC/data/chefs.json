@@ -1,0 +1,37 @@
+[
+    {
+      "id": 1,
+      "fullName": "Azka Rasyid",
+      "birthDate": "1986-10-04",
+      "gender": "Male",
+      "city": "Jakarta"
+    },
+    {
+      "id": 2,
+      "fullName": "Fiona Freeland",
+      "birthDate": "1986-07-17",
+      "gender": "Female",
+      "city": "Bali"
+    },
+    {
+      "id": 3,
+      "fullName": "M. Joko",
+      "birthDate": "1988-06-10",
+      "gender": "Male",
+      "city": "Bandung"
+    },
+    {
+      "id": 4,
+      "fullName": "Alex Gio",
+      "birthDate": "1986-12-11",
+      "gender": "Male",
+      "city": "Jakarta"
+    },
+    {
+      "id": 5,
+      "fullName": "Haekal Fatur",
+      "birthDate": "1991-12-18",
+      "gender": "Male",
+      "city": "Jakarta"
+    }
+  ]

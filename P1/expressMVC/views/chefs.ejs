@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chefs</title>
+</head>
+<body>
+    <h1>Chefs</h1>
+    <table border="1">
+        <tr>
+            <th>Full Name</th>
+            <th>Birth Date</th>
+            <th>Gender</th>
+            <th>City</th>
+        </tr>
+        <% for(let chef of chefs){  %>
+            <tr>
+                <td><%= chef.getAlias %></td>
+                <td><%= chef.birthDate %></td>
+                <td><%= chef.gender %></td>
+                <td><%= chef.city %></td>
+            </tr>
+        <% }  %>
+    </table>
+</body>
+</html>

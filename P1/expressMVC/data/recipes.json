@@ -1,0 +1,167 @@
+[
+    {
+      "id": 1,
+      "name": "Telur Dadar Gulung",
+      "duration": 20,
+      "category": "Breakfast",
+      "createdDate" : "2001-01-01",
+      "notes": "Bahan :\n4 butir telur ayam\n1 batang daun bawang, iris kasar\n1/2 potong wortel segar\n1/4 sdt garam\n\nCara Membuat :\n1. Pada satu tempat, kocok telur hingga mengembang dan tercampur antara putih dan kuningnya.\n2. Lanjut dengan meletakkan dua sendok makan telur di wadah terpisah.\n3. Setelah itu Anda masukkan irisan daun bawang, wortel, dan bubuhi garam (bumbu). Aduk telur hingga rata.\n4. Panaskan minyak pada wajan ceper. Untuk meratakan minyak, Anda bisa mengoleskan bagian yang\nbelum terkena minyak menggunakan tisu yang sebelumnya sudah dicelup kedalam minyak goreng.\n5. Tuangkan adonan yang satu, tunggu hingga bagian bawah mengeras.\n6. Awali dengan sedikit melipat bagian ujung, diamkan sejenak, lipat lagi hingga telur dadar tergulung\nsempurna. Sisihkan ke pinggir wajan.\n7. Selepas itu, beri minyak secukupnya pada wajan yang sama.\n8. Tuang adonan sisa (satunya lagi), lakukan hal yang sama hingga tergulung sempurna, usahakan agar rata.\n9. Kecilkan api, tunggu sampai telur matang dan sisi luar berwarna kecokelatan. Angkat.\n10. Iris gulungan telur dengan ketebalan sekitar 2 cm.",
+      "imageUrl": "https://contohgambar.herokuapp.com/01.jpg",
+      "totalVote": 20,
+      "ChefId" : 1
+    },
+    {
+      "id": 2,
+      "name": "Roti Panggang Teflon",
+      "duration": 10,
+      "category": "Breakfast",
+      "createdDate" : "2000-02-24",
+      "notes": "Bahan :\r\n10 lembar roti tawar\r\nMentega untuk olesan\r\nMeises ceres untuk isian\r\n\r\nCara Membuat :\r\n1. Ambil roti tawar kemudian olesi menggunakan mentega, di sisi lain olesi roti juga olesi dengan mentega.\r\n2. Kemudian beri tambahan mesis ceres dan ratakan kemudian tumpuk menggunakan roti yang sudah di olesi dengan mentega tadi.\r\n3. Persiapkan teflon beri sedikit mentega kemudian ratakan dan masukan roti yang telah siap di panggang.\r\n4. Bolak – balik roti supaya tidak hangus. Panggang sampai kecoklatan dan matang.\r\n5. Bila sudah maka angkat lalu hidangkan selagi masih hangat.",
+      "imageUrl": "https://contohgambar.herokuapp.com/02.jpg",
+      "totalVote": 10,
+      "ChefId" : 5
+    },
+    {
+      "id": 3,
+      "name": "Ayam Goreng Serundeng",
+      "duration": 70,
+      "category": "Lunch",
+      "createdDate" : "1999-12-20",
+      "notes": "Bahan :\r\n1 ekor ayam (potong menjadi 12 bagian)\r\n\r\nBumbu:\r\n4 siung bawang putih\r\n1 ruas jahe\r\n1 ruas kunyit\r\n½ sdt ketumbar\r\nkaldu ayam bubuk secukupnya \r\nGaram secukupnya\r\n4 lbr daun salam\r\nair secukupnya\r\nkelapa parut secukupnya\r\n\r\nCara Membuat :\r\n1. Haluskan semua bumbu seperti bawang putih, jahe, kunyit, dan ketumbar.\r\n2. Kemudian campurkan bumbu halus dengan ayam di dalam panci.\r\n3. Tambahkan garam, penyedap rasa, bubuk kaldu ayam, santan, air, parutan kelapa dan daun salam.\r\n4. Ungkep hingga ayam empuk dan bumbu meresap.\r\n5. Goreng ayam dan serundeng dengan minyak panas. Goreng hingga berwarna kuning keemasan.\r\n6. Ayam goreng serundeng bumbu santan siap disajikan.",
+      "imageUrl": "https://contohgambar.herokuapp.com/03.jpg",
+      "totalVote": 120,
+      "ChefId" : 5
+    },
+    {
+      "id": 4,
+      "name": "Kebab",
+      "duration": 40,
+      "category": "Dinner",
+      "createdDate" : "2005-07-01",
+      "notes": "Bahan :\r\n3 lembar kulit tortila instan\r\n3 buah sosis (bisa dipanggang dulu)\r\n3 lembar selada\r\n1 siung bawang bombay\r\n1 buah timun\r\nsaus tomat, sambal, mayones & mentega secukupnya\r\n\r\nCara Membuat :\r\n1. Siapkan kulit tortila.\r\n2. Potong-potong selada yang telah dicuci, letakkan di atas kulit tortila.\r\n3. Kemudian beri potongan sosis panggang, timun, dan bawang.\r\n4. Tambahkan saus tomat atau saus sambal dan mayones.\r\n5. Lipat ujung kanan dan kiri, kemudian gulung perlahan.\r\n6. Panaskan teflon, beri olesan mentega.\r\n7. Masukkan hasil gulungan kebab ke teflon, masak hingga kulit tortila berubah warna kekuningan. Angkat dan kebab sosis siap disajikan.",
+      "imageUrl": "https://contohgambar.herokuapp.com/04.jpg",
+      "totalVote": 110,
+      "ChefId" : 4
+    },
+    {
+      "id": 5,
+      "name": "Nugget Tempe",
+      "duration": 55,
+      "category": "Lunch",
+      "createdDate" : "2010-09-18",
+      "notes": "Bahan :\r\n500 gr tempe (kukus)\r\nTelur ayam 2 butir\r\nMerica bubuk 1/2 sdt\r\nSecukupnya garam\r\nBawang polong 1 batang (dicincang halus)\r\nBawang putih 3 siung (dihaluskan)\r\nBawang merah 3 butir (dihaluskan)\r\nSeledri 1 batang (dicincang halus)\r\nSecukupnya tepung roti\r\n\r\nCara membuat :\r\n1. Tempe dikukus lebih dulu\r\n2. Haluskan tempe kukus tersebut\r\n3. Campur tempe dengan bumbu halus, telur dan tepung roti\r\n4. Tambahkan merica bubuk, garam, bawang polong dan seledri\r\n5. Semua bahan diaduk menggunakan tangan sampai tercampur rata\r\n6. Siapkan loyang kotak yang sudah dioles dengan sedikit minyak, lalu masukkan adonan ke dalamnya.\r\n7. Kukus nugget hingga matang (kira-kira 35 menit)",
+      "imageUrl": "https://contohgambar.herokuapp.com/05.jpg",
+      "totalVote": 50,
+      "ChefId" : 1
+    },
+    {
+      "id": 6,
+      "name": "Popcorn",
+      "duration": 20,
+      "category": "Other",
+      "createdDate" : "1999-01-18",
+      "notes": "Bahan :\r\n75 gram jagung khusus popcorn\r\nMinyak sayur (secukupnya)\r\n1 sdt garam\r\n\r\nCara Membuat :\r\n1. Masukkan minyak ke dalam panci dan tunggu hingga minyak cukup panas.\r\n2. Masukkan jagung ke dalamnya.\r\n3. Masak menggunakan api sedang. Tunggu hingga bunyi letupan berhenti, lalu masukkan garam \r\ndan aduk hingga rata.\r\n4. Jika sudah, tiriskan dan simpan popcorn di dalam wadah.",
+      "imageUrl": "https://contohgambar.herokuapp.com/06.jpg",
+      "totalVote": 10,
+      "ChefId" : 4
+    },
+    {
+      "id": 7,
+      "name": "Ice Cream Goreng",
+      "duration": 65,
+      "category": "Other",
+      "createdDate" : "2010-05-09",
+      "notes": "Bahan :\r\n4 scoop Ice Cream\r\n2 lembar roti tawar\r\n1 butir telur\r\n50 ml susu cair\r\n100 gr corn flakes, hancurkan\r\n200 ml minyak untuk menggoreng\r\n\r\nCara Membuat :\r\n1. Potong pinggiran roti tawar, kemudian pipihkan dengan rolling pin.\r\n2. Tuang 2 scoop Ice Cream, lalu bentuk menjadi bola dan bungkus dengan plastic wrap. \r\n3. Bekukan dalam freezer.\r\n4. Campurkan telur dan susu, kocok lepas.  \r\n5. Celupkan bola es krim ke dalam campuran telur, kemudian salut dengan corn flakes yang \r\nsudah dihancurkan.\r\n6. Goreng es krim dalam minyak panas di atas api sedang. Setelah keemasan, tiriskan, sajikan.",
+      "imageUrl": "https://contohgambar.herokuapp.com/07.jpg",
+      "totalVote": 50,
+      "ChefId" : 3
+    },
+    {
+      "id": 8,
+      "name": "Popcorn Caramel",
+      "duration": 20,
+      "category": "Other",
+      "createdDate" : "1999-07-18",
+      "notes": "Bahan :\nSirup Caramel\n75 gram jagung khusus popcorn\nMinyak sayur (secukupnya)\n1 sdt garam\n\nCara Membuat :\n1. Masukkan minyak ke dalam panci dan tunggu hingga minyak cukup panas.\n2. Masukkan jagung ke dalamnya.\n3. Masak menggunakan api sedang. Tunggu hingga bunyi letupan berhenti, lalu masukkan garam \ndan aduk hingga rata.\n4. Jika sudah, tiriskan dan simpan popcorn di dalam wadah.",
+      "imageUrl": "https://contohgambar.herokuapp.com/08.jpg",
+      "totalVote": 5,
+      "ChefId" : 2
+    },
+    {
+      "id": 9,
+      "name": "Telur Dadar Gulung V2",
+      "duration": 20,
+      "category": "Breakfast",
+      "createdDate" : "2008-06-01",
+      "notes": "Bahan :\n4 butir telur ayam\n1 batang daun bawang, iris kasar\n1/2 potong wortel segar\n1/4 sdt garam\n\nCara Membuat :\n1. Pada satu tempat, kocok telur hingga mengembang dan tercampur antara putih dan kuningnya.\n2. Lanjut dengan meletakkan dua sendok makan telur di wadah terpisah.\n3. Setelah itu Anda masukkan irisan daun bawang, wortel, dan bubuhi garam (bumbu). Aduk telur hingga rata.\n4. Panaskan minyak pada wajan ceper. Untuk meratakan minyak, Anda bisa mengoleskan bagian yang\nbelum terkena minyak menggunakan tisu yang sebelumnya sudah dicelup kedalam minyak goreng.\n5. Tuangkan adonan yang satu, tunggu hingga bagian bawah mengeras.\n6. Awali dengan sedikit melipat bagian ujung, diamkan sejenak, lipat lagi hingga telur dadar tergulung\nsempurna. Sisihkan ke pinggir wajan.\n7. Selepas itu, beri minyak secukupnya pada wajan yang sama.\n8. Tuang adonan sisa (satunya lagi), lakukan hal yang sama hingga tergulung sempurna, usahakan agar rata.\n9. Kecilkan api, tunggu sampai telur matang dan sisi luar berwarna kecokelatan. Angkat.\n10. Iris gulungan telur dengan ketebalan sekitar 2 cm.",
+      "imageUrl": "https://contohgambar.herokuapp.com/09.jpg",
+      "totalVote": 5,
+      "ChefId" : 2
+    },
+    {
+      "id": 10,
+      "name": "Roti Panggang Coklat",
+      "duration": 10,
+      "category": "Breakfast",
+      "createdDate" : "2008-07-10",
+      "notes": "Bahan :\n10 lembar roti tawar\nMentega untuk olesan\nMeises ceres untuk isian\n\nCara Membuat :\n1. Ambil roti tawar kemudian olesi menggunakan mentega, di sisi lain olesi roti juga olesi dengan mentega.\n2. Kemudian beri tambahan mesis ceres dan ratakan kemudian tumpuk menggunakan roti yang sudah di olesi dengan mentega tadi.\n3. Persiapkan teflon beri sedikit mentega kemudian ratakan dan masukan roti yang telah siap di panggang.\n4. Bolak – balik roti supaya tidak hangus. Panggang sampai kecoklatan dan matang.\n5. Bila sudah maka angkat lalu hidangkan selagi masih hangat.",
+      "imageUrl": "https://contohgambar.herokuapp.com/10.jpg",
+      "totalVote": 15,
+      "ChefId" : 1
+    },
+    {
+      "id": 11,
+      "name": "Kebab Turki",
+      "duration": 40,
+      "category": "Dinner",
+      "createdDate" : "2008-03-01",
+      "notes": "Bahan :\n3 lembar kulit tortila instan\n3 buah sosis (bisa dipanggang dulu)\n3 lembar selada\n1 siung bawang bombay\n1 buah timun\nsaus tomat, sambal, mayones & mentega secukupnya\n\nCara Membuat :\n1. Siapkan kulit tortila.\n2. Potong-potong selada yang telah dicuci, letakkan di atas kulit tortila.\n3. Kemudian beri potongan sosis panggang, timun, dan bawang.\n4. Tambahkan saus tomat atau saus sambal dan mayones.\n5. Lipat ujung kanan dan kiri, kemudian gulung perlahan.\n6. Panaskan teflon, beri olesan mentega.\n7. Masukkan hasil gulungan kebab ke teflon, masak hingga kulit tortila berubah warna kekuningan. Angkat dan kebab sosis siap disajikan.",
+      "imageUrl": "https://contohgambar.herokuapp.com/11.jpg",
+      "totalVote": 90,
+      "ChefId" : 4
+    },
+    {
+      "id": 12,
+      "name": "Nugget Tempe Crunchy",
+      "duration": 55,
+      "category": "Lunch",
+      "createdDate" : "2011-04-21",
+      "notes": "Bahan :\n500 gr tempe (kukus)\nTelur ayam 2 butir\nMerica bubuk 1/2 sdt\nSecukupnya garam\nBawang polong 1 batang (dicincang halus)\nBawang putih 3 siung (dihaluskan)\nBawang merah 3 butir (dihaluskan)\nSeledri 1 batang (dicincang halus)\nSecukupnya tepung roti\n\nCara membuat :\n1. Tempe dikukus lebih dulu\n2. Haluskan tempe kukus tersebut\n3. Campur tempe dengan bumbu halus, telur dan tepung roti\n4. Tambahkan merica bubuk, garam, bawang polong dan seledri\n5. Semua bahan diaduk menggunakan tangan sampai tercampur rata\n6. Siapkan loyang kotak yang sudah dioles dengan sedikit minyak, lalu masukkan adonan ke dalamnya.\n7. Kukus nugget hingga matang (kira-kira 35 menit)",
+      "imageUrl": "https://contohgambar.herokuapp.com/12.jpg",
+      "totalVote": 70, 
+      "ChefId" : 1
+    },
+    {
+      "id": 13,
+      "name": "Ice Cream Coklat Goreng",
+      "duration": 65,
+      "category": "Other",
+      "createdDate" : "2018-07-10",
+      "notes": "Bahan : \n4 scoop Ice Cream\n2 lembar roti tawar\n1 butir telur\n50 ml susu cair\n100 gr corn flakes, hancurkan\n200 ml minyak untuk menggoreng\n\nCara Membuat :\n1. Potong pinggiran roti tawar, kemudian pipihkan dengan rolling pin.\n2. Tuang 2 scoop Ice Cream, lalu bentuk menjadi bola dan bungkus dengan plastic wrap. \n3. Bekukan dalam freezer.\n4. Campurkan telur dan susu, kocok lepas.  \n5. Celupkan bola es krim ke dalam campuran telur, kemudian salut dengan corn flakes yang \nsudah dihancurkan.\n6. Goreng es krim dalam minyak panas di atas api sedang. Setelah keemasan, tiriskan, sajikan.",
+      "imageUrl": "https://contohgambar.herokuapp.com/13.jpg",
+      "totalVote": 20,
+      "ChefId" : 3
+    },
+    {
+      "id": 14,
+      "name": "Sandwich Sosis Telur",
+      "duration": 45,
+      "category": "Lunch",
+      "createdDate" : "2000-01-13",
+      "notes": "Bahan :\n4 lembar roti tawar\n1 butir telur (kocok lepas)\n2 buah sosis (iris tipis-tipis)\n2 lembar keju slice\nGaram, Merica dan Margarin secukupnya\n\nCara Membuat :\n1. Siapkan roti lalu pipihkan dengan gelas.\n2. Iris tipis sosis dan siapkan telur. Beri sedikit garam dan merica lalu kocok.\n3. Masukkan dua lembar roti ke dalam telur. Celup satu sisi saja.\n4. Kemudian tambahkan keju dan sosi di lembar roti yang tak dicelupkan telur. Tutup dengan roti.\n5. Siapkan teflon dan beri sedikit margarin. Panggang sampai kecoklatan.\n6. Sandwich sosis telur siap dinikmati.",
+      "imageUrl": "https://contohgambar.herokuapp.com/14.jpg",
+      "totalVote": 100,
+      "ChefId": 2
+    },
+    {
+      "id": 15,
+      "name": "Telur Mata Sapi",
+      "duration": 10,
+      "category": "Breakfast",
+      "createdDate" : "1992-12-10",
+      "notes": "Bahan :\n1 butir telur\nGaram (secukupnya)\nLada bubuk (secukupnya)\nMargarin (secukupnya)\n\nCara Membuat :\n1. Panaskan teflon kemudian oleskan margarin di atasnya.\n2. Ceplok telur di atas teflon, masak dengan suhu api kecil. \n3. Tunggu hingga bagian bawah telur cukup matang. \n4. Taburkan garam dan lada bubuk di bagian atas telur.\n5. Kembali masak hingga telur matang dengan api kecil. \n6. Jika bagian atas sudah cukup matang, balik telur dan masak hingga matang sempurna. \n7. Telur mata sapi yang gurih anti pecah dan matang sempurna siap disajikan.",
+      "imageUrl": "https://contohgambar.herokuapp.com/15.jpg",
+      "totalVote": 10,
+      "ChefId": 2
+    }
+  ]
