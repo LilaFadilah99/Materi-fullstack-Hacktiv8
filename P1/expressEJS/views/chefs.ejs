@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anggota Eclipse</title>
+    <style>
+        h1{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <a href="/chefs">Chefs List</a> |
+    <a href="/chefs/add">Add Chefs</a>
+    <h1>Anggota Eclipse</h1>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Full Name</th>
+            <th>Birthdate</th>
+            <th>Gender</th>
+            <th>City</th>
+
+        </tr>
+        <% for(let chef of chefs){ %>
+            <tr>
+                <td><%= chef.id %></td>
+                <td><%= chef.fullName %></td>
+                <td><%= chef.birthDate %></td>
+                <td><%= chef.gender %></td>
+                <td><%= chef.city %></td>
+            </tr>
+        <% } %>
+    </table>
+</body>
+</html>
