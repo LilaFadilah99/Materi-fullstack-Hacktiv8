@@ -19,15 +19,15 @@
         </tr>
         <% for(let recipe of recipes){ %>
             <tr>
-                <th><%= recipe.name %></th>
-                <th><%= recipe.duration %></th>
-                <th><%= recipe.category %></th>
-                <th><%= recipe.totalVote %></th>
-                <th>
+                <td><%= recipe.name %></td>
+                <td><%= recipe.duration %></td>
+                <td><%= recipe.category %></td>
+                <td><%= recipe.totalVote %></td>
+                <td>
                     <a href="">Read Recipe</a> |
-                    <a href="">Edit</a> |
+                    <a href="/recipes/<%= recipe.id %>/edit">Edit</a> |
                     <a href="/recipes/<%= recipe.id %>/delete">Delete</a>
-                </th>
+                </td>
             </tr>
         <% } %>
     </table>

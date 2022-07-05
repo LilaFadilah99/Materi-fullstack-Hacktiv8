@@ -46,7 +46,8 @@ class Recipe {
 }
 
 class RecipeDetail {
-    constructor(name, duration, category, createdDate, notes, imageUrl, totalVote, ChefId, chefName) {
+    constructor(id, name, duration, category, createdDate, notes, imageUrl, totalVote, ChefId, chefName) {
+        this.id = id
         this.name = name
         this.duration = duration
         this.category = category
@@ -56,6 +57,12 @@ class RecipeDetail {
         this.totalVote = totalVote
         this.ChefId = ChefId
         this.chefName = chefName
+    }
+
+    get formatDateValue(){
+        let date = new Date(this.createdDate)
+        date = date.toISOString().split('T')[0]
+        return date
     }
 }
 

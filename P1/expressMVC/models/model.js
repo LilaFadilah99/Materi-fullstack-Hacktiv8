@@ -1,4 +1,4 @@
-const { Chef, ChefDetailDuration, Recipe } = require('./class')
+const { Chef, ChefDetailDuration, Recipe, RecipeDetail } = require('./class')
 const pool = require('../config/connection')
 
 class Model {
@@ -42,10 +42,31 @@ class Model {
                 cb(err, null)
             }else{
                 let recipes = res.rows
+                // console.log(recipes);
                 recipes = recipes.map(({id, name, duration, category, totalVote}) => {
                     return new Recipe(id, name, duration, category, totalVote)
                 })
                 cb(null, recipes)
+            }
+        })
+    }
+
+    static readOneRecipe(id, cb){
+        let query = `SELECT r."id", r."name", r."duration", r."category", r."createdDate", r."notes", r."imageUrl", r."totalVote", r."ChefId", c."fullName" AS "chefName" FROM "Recipes" r 
+        INNER JOIN "Chefs" c 
+        ON r."ChefId" = c."id"
+        WHERE r."id" = ${id};`
+        pool.query(query, (err, res) => {
+            if(err){
+                console.log(err);
+                cb(err, null)
+            }else{
+                let recipes = res.rows
+                // console.log(recipes);
+                recipes = recipes.map(({id, name, duration, category, createdDate, notes, imageUrl, totalVote, ChefId, chefName}) => {
+                    return new RecipeDetail(id, name, duration, category, createdDate, notes, imageUrl, totalVote, ChefId, chefName)
+                })
+                cb(null, recipes[0])
             }
         })
     }

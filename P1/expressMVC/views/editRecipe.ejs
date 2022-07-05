@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit New Recipe</title>
+</head>
+<body>
+    <h1>Edit New Recipe</h1>
+    <form action="/recipes/add" method="post">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" autocomplete="off" value="<%= recipe.name %>">
+        <br>
+        <label for="duration">Duration</label>
+        <input type="number" name="duration" id="duration" autocomplete="off" value="<%= recipe.duration %>">
+        <br>
+        <label for="category">Category</label>
+        <select name="category" id="category">
+            <option value="Breakfast" <%= recipe.category === "Breakfast" ? 'selected' : '' %>>Breakfast</option>
+            <option value="Lunch" <%= recipe.category === "Lunch" ? 'selected' : '' %>>Lunch</option>
+            <option value="Dinner" <%= recipe.category === "Dinner" ? 'selected' : '' %>>Dinner</option>
+            <option value="Other" <%= recipe.category === "Other" ? 'selected' : '' %>>Other</option>
+        </select>
+        <br>
+        <label for="notes">Notes</label>
+        <textarea name="notes" id="notes" cols="30" rows="10"><%= recipe.notes %></textarea>
+        <br>
+        <label for="imageUrl">Image URL</label>
+        <input type="text" name="imageUrl" id="imageUrl" value="<%= recipe.imageUrl %> " autocomplete="off">
+        <br>
+        <label for="ChefId">Chef</label>
+        <select name="ChefId" id="ChefId">
+            <% for(let chef of chefs) {%>
+                    <option value="<%= chef.id %>" <%= chef.id === recipe.ChefId ? 'selected' : '' %>><%= chef.fullName %></option>
+            <% } %>
+        </select>
+        <br>
+        <label for="createdDate">Created Date</label>
+        <input type="date" name="createdDate" id="createdDate" value="<%= recipe.formatDateValue %>">
+
+        <br>
+        <input type="submit" value="Save">
+    </form>
+</body>
+</html>
