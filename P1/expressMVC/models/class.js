@@ -1,5 +1,5 @@
-class Chef{
-    constructor(id, fullName, birthDate, gender, city){
+class Chef {
+    constructor(id, fullName, birthDate, gender, city) {
         this.id = id
         this.fullName = fullName
         this.birthDate = birthDate
@@ -7,17 +7,23 @@ class Chef{
         this.city = city
     }
 
-    get getAlias(){
-        if(this.gender === "Male"){
+    get formatBirthDate() {
+        let date = new Date(this.birthDate);
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        return date.toLocaleDateString('id-ID', options)
+    }
+
+    get getAlias() {
+        if (this.gender === "Male") {
             return `Mr. ${this.fullName}`
-        }else{
+        } else {
             return `Mrs. ${this.fullName}`
         }
     }
 }
 
-class ChefDetailDuration{
-    constructor(id, fullName, birthDate, gender, city, averageDuration, minDuration, maxDuration){
+class ChefDetailDuration {
+    constructor(id, fullName, birthDate, gender, city, averageDuration, minDuration, maxDuration) {
         this.id = id
         this.fullName = fullName
         this.birthDate = birthDate
@@ -29,8 +35,8 @@ class ChefDetailDuration{
     }
 }
 
-class Recipe{
-    constructor(id, name, duration, category, totalVote ){
+class Recipe {
+    constructor(id, name, duration, category, totalVote) {
         this.id = id
         this.name = name
         this.duration = duration
@@ -39,8 +45,8 @@ class Recipe{
     }
 }
 
-class RecipeDetail{
-    constructor(name, duration, category, createdDate, notes, imageUrl, totalVote, ChefId, chefName){
+class RecipeDetail {
+    constructor(name, duration, category, createdDate, notes, imageUrl, totalVote, ChefId, chefName) {
         this.name = name
         this.duration = duration
         this.category = category

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Recipe</title>
+</head>
+<body>
+    <h1>Add New Recipe</h1>
+    <form action="/recipes/add" method="post">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" autocomplete="off">
+        <br>
+        <label for="duration">Duration</label>
+        <input type="number" name="duration" id="duration" autocomplete="off">
+        <br>
+        <label for="category">Category</label>
+        <select name="category" id="category">
+            <option value="Breakfast">Breakfast</option>
+            <option value="Lunch">Lunch</option>
+            <option value="Dinner">Dinner</option>
+            <option value="Other">Other</option>
+        </select>
+        <br>
+        <label for="notes">Notes</label>
+        <textarea name="notes" id="notes" cols="30" rows="10"></textarea>
+        <br>
+        <label for="imageUrl">Image URL</label>
+        <input type="text" name="imageUrl" id="imageUrl" autocomplete="off">
+        <br>
+        <label for="ChefId">Chef</label>
+        <select name="ChefId" id="ChefId">
+            <% for(let chef of chefs) {%>
+                <option value="<%= chef.id %>"><%= chef.fullName %></option>
+            <% } %>
+        </select>
+        <br>
+        <label for="createdDate">Created Date</label>
+        <input type="date" name="createdDate" id="createdDate">
+        <br>
+        <input type="submit" value="Save">
+    </form>
+</body>
+</html>

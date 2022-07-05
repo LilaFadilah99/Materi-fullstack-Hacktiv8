@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes List</title>
+</head>
+<body>
+    <h1>Recipes List</h1>
+    <a href="/recipes/add">Add New Recipe</a>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Duration</th>
+            <th>Category</th>
+            <th>Total Vote</th>
+            <th>Action</th>
+        </tr>
+        <% for(let recipe of recipes){ %>
+            <tr>
+                <th><%= recipe.name %></th>
+                <th><%= recipe.duration %></th>
+                <th><%= recipe.category %></th>
+                <th><%= recipe.totalVote %></th>
+                <th>
+                    <a href="">Read Recipe</a> |
+                    <a href="">Edit</a> |
+                    <a href="/recipes/<%= recipe.id %>/delete">Delete</a>
+                </th>
+            </tr>
+        <% } %>
+    </table>
+</body>
+</html>

@@ -49,6 +49,32 @@ class Model {
             }
         })
     }
+
+    static addRecipe(newRecipe, cb){
+        let {name, duration, category, createdDate, notes, imageUrl, ChefId} = newRecipe
+
+        let queryInsertRecipe = `INSERT INTO "Recipes" ("name", "duration", "category", "createdDate", "totalVote", "notes", "imageUrl", "ChefId")
+        VALUES ('${name}', ${duration}, '${category}', '${createdDate}', 0, '${notes}', '${imageUrl}', ${ChefId}) RETURNING *;`
+
+        pool.query(queryInsertRecipe, (err, res) => {
+            if(err){
+                cb(err, null)
+            }else{
+                cb(null, res.rows)
+            }
+        })
+    }
+
+    static deleteRecipe(id, cb){
+        let queryDeleteRecipe = `DELETE FROM "Recipes" WHERE "id" = ${id} RETURNING *;`
+        pool.query(queryDeleteRecipe, (err, res) => {
+            if(err){
+                cb(err, null)
+            }else{
+                cb(null, res.rows)
+            }
+        })
+    }
 }
 
 module.exports = Model
