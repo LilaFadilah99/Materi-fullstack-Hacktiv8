@@ -53,15 +53,50 @@ class Controller{
         })
     }
 
+    static validateDate(createdDate){
+        let date = new Date().getTime()
+        let dateNow = new Date(createdDate).getTime()
+        if(dateNow > date){
+            return false
+        }else{
+            return true
+        }
+    }
+
+    static validateNotes(notes){
+        notes = notes.split(" ")
+        if(notes.length < 10){
+            return false
+        }else{
+            return true
+        }
+    }
+
     static addRecipe(request, response){
+        let errMesages = []
         let newRecipe = request.body
-        Model.addRecipe(newRecipe, (err, data) => {
-            if(err){
-                response.send(err)
-            }else{
-                response.redirect('/recipes')
-            }
-        })
+        let { createdDate, notes } = newRecipe
+        let resultValidateNotes = Controller.validateNotes(notes)
+        let resultValidateDate = Controller.validateDate(createdDate) // ini proses validate tanggal
+        if(resultValidateDate ===  false) { // ini ngecek hasil validate tanggal
+            errMesages.push("Input tanggal salah, maksimal tanggal yang diinput adalah tanggal hari ini")
+        }
+        if(resultValidateNotes ===  false) { // ini ngecek hasil validate notes
+            errMesages.push("Input notes salah, minimum kata yang dinput harus 10 kata")
+        }
+
+        if(errMesages.length){
+            response.send(errMesages)
+        }else{
+            Model.addRecipe(newRecipe, (err, data) => {
+                if(err){
+                    response.send(err)
+                }else{
+                    console.log(data);
+                    response.redirect('/recipes')
+                }
+            })
+        }
     }
 
     static deleteRecipe(request, response){
@@ -94,6 +129,18 @@ class Controller{
                         response.render('editRecipe', { chefs, recipe })
                     }
                 })
+            }
+        })
+    }
+
+    static editRecipe(request, response){
+        let newData = request.body
+        let id = request.params.id
+        Model.editRecipe(newData, id, (err, data) => {
+            if(err){
+                response.send(err)
+            }else{
+                response.redirect('/recipes')
             }
         })
     }

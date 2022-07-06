@@ -8,6 +8,8 @@ router.post('/add', Controller.addRecipe)
 router.post('/search', Controller.searchRecipes)
 router.get('/:id/delete', Controller.deleteRecipe)
 router.get('/:id/edit', Controller.editRecipePage)
+router.post('/:id/edit', Controller.editRecipe)
+
 
 
 

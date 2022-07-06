@@ -42,6 +42,7 @@ class Model {
             keywords = keywords.map((key) => {return `"name" ILIKE '%${key}%'`}).join(" OR ")
             query += `WHERE ${keywords}`
         }
+        query += `ORDER BY "id" ASC;`
         pool.query(query, (err, res) => {
             if(err){
                 cb(err, null)
@@ -94,6 +95,31 @@ class Model {
     static deleteRecipe(id, cb){
         let queryDeleteRecipe = `DELETE FROM "Recipes" WHERE "id" = ${id} RETURNING *;`
         pool.query(queryDeleteRecipe, (err, res) => {
+            if(err){
+                cb(err, null)
+            }else{
+                cb(null, res.rows)
+            }
+        })
+    }
+
+    static editRecipe(newData, id, cb){
+        let {name, duration, category, notes, imageUrl, ChefId, createdDate} = newData
+        let queryUpdateRecipe = `
+        UPDATE "Recipes"
+        SET 
+        "name" = '${name}',
+        "duration" = ${duration},
+        "category" = '${category}',
+        "notes" = '${notes}',
+        "imageUrl" = '${imageUrl}',
+        "ChefId" = ${ChefId},
+        "createdDate" = '${createdDate}',
+        WHERE
+        "id" = ${id}
+        RETURNING *;
+        `
+        pool.query(queryUpdateRecipe, (err, res) => {
             if(err){
                 cb(err, null)
             }else{
