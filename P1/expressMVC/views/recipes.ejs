@@ -9,6 +9,10 @@
 <body>
     <h1>Recipes List</h1>
     <a href="/recipes/add">Add New Recipe</a>
+    <form action="/recipes/search" method="post">
+        <input type="text" name="keywords" id="keywords" autocomplete="off"> 
+        <input type="submit" value="search">
+    </form>
     <table border="1">
         <tr>
             <th>Name</th>

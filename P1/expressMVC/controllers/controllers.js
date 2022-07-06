@@ -26,8 +26,9 @@ class Controller{
         })
     }
 
-    static readRecipes(request, response){
-        Model.readRecipes((err, data) => {
+    static readRecipes(request, response){ // menghandle routing /recipes tetapi bisa menerima query bisa tidak.
+        let keywords = request.query.search
+        Model.readRecipes(keywords, (err, data) => {
             if(err){
                 response.send(err)
             }else{
@@ -35,6 +36,11 @@ class Controller{
                 response.render('recipes', { recipes : data })
             }
         })
+    }
+
+    static searchRecipes(request, response){ // menerima input dari form
+        let keywords = request.body.keywords
+        response.redirect(`/recipes?search=${keywords}`)
     }
 
     static addRecipesPage(request, response){

@@ -35,8 +35,13 @@ class Model {
         })
     }
 
-    static readRecipes(cb){
+    static readRecipes(keywords, cb){
         let query = `SELECT "id", "name", "duration", "category", "totalVote" FROM "Recipes"`
+        if(keywords){ // jika keyword terdeteksi, maka ditambahkan kondisi
+            keywords = keywords.split(" ")
+            keywords = keywords.map((key) => {return `"name" ILIKE '%${key}%'`}).join(" OR ")
+            query += `WHERE ${keywords}`
+        }
         pool.query(query, (err, res) => {
             if(err){
                 cb(err, null)
