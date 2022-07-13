@@ -9,6 +9,12 @@ module.exports = (sequelize, DataTypes) => {
      * This method is not a part of Sequelize lifecycle.
      * The `models/index` file will call this method automatically.
      */
+    get formatDate (){ // contoh bisa menambahkan getter pada model sequelize
+      let date = new Date(this.dateOfEvent);
+      let options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+      return date.toLocaleString('id-ID', options)
+    }
+
     static associate(models) {
       // define association here
     }
@@ -22,7 +28,7 @@ module.exports = (sequelize, DataTypes) => {
     event: DataTypes.STRING,
     description: DataTypes.TEXT,
     photo: DataTypes.STRING,
-    doe: DataTypes.DATE
+    dateOfEvent: DataTypes.DATE
   }, {
     sequelize,
     modelName: 'Report',
