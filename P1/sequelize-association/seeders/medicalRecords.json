@@ -1,0 +1,44 @@
+[
+  {
+    "PatientId": 1,
+    "DoctorId": 3,
+    "diagnosis": "diare",
+    "treatment": "infus",
+    "cost": 80000
+  },
+  {
+    "PatientId": 2,
+    "DoctorId": 1,
+    "diagnosis": "patah tulang",
+    "treatment": "operasi",
+    "cost": 20000000
+  },
+  {
+    "PatientId": 3,
+    "DoctorId": 2,
+    "diagnosis": "usus buntu",
+    "treatment": "operasi",
+    "cost": 10000000
+  },
+  {
+    "PatientId": 1,
+    "DoctorId": 2,
+    "diagnosis": "usus buntu",
+    "treatment": "operasi",
+    "cost": 10000000
+  },
+  {
+    "PatientId": 3,
+    "DoctorId": 3,
+    "diagnosis": "diare",
+    "treatment": "infus",
+    "cost": 80000
+  },
+  {
+    "PatientId": 3,
+    "DoctorId": 1,
+    "diagnosis": "patah tulang",
+    "treatment": "operasi",
+    "cost": 20000000
+  }
+]

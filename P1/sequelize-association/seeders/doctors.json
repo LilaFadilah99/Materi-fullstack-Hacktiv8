@@ -1,0 +1,23 @@
+[
+  {
+    "first_name": "John",
+    "last_name": "Doe",
+    "email": "john@rs.com",
+    "password": "john123",
+    "speciality": "dentist" 
+  },
+  {
+    "first_name": "Jane",
+    "last_name": "Doe",
+    "email": "jane@rs.com",
+    "password": "jane123",
+    "speciality": "general" 
+  },
+  {
+    "first_name": "Mike",
+    "last_name": "Doe",
+    "email": "mike@rs.com",
+    "password": "mike123",
+    "speciality": "cardiology" 
+  }
+]
