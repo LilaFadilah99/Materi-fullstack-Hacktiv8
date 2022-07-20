@@ -1,0 +1,34 @@
+<%- include('partials/header') %>
+<hr>
+<div class="container w-50 text-left">
+  <form method="POST">
+      <div class="form-group">
+        <label for="first-name">First Name</label>
+        <input type="text" class="form-control" id="first-name" name="first_name" value=<%= user ? user.first_name : "" %> placeholder="First Name">
+      </div>
+      <div class="form-group">
+        <label for="last-name">Last Name</label>
+        <input type="text" class="form-control" id="last-name" name="last_name" value=<%= user ? user.last_name : "" %> placeholder="Last Name">
+      </div>
+      <div class="form-group">
+        <label for="gender">Gender</label>
+        <select class="custom-select" id="gender" name="gender">
+          <option disabled selected>Choose Gender</option>
+          <option <%= user && user.gender === "male" ? "selected" : "" %> value="male">Male</option>
+          <option <%= user && user.gender === "female" ? "selected" : "" %> value="female">Female</option>
+          <option <%= user && user.gender === "null" ? "selected" : "" %> value="null">Prefer not to choose</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="birth-date">Date of Birth</label>
+        <input type="date" class="form-control" name="dob" value=<%= user ? formatDateToEjs(user.dob) : "" %> id="birth-date">
+        <!-- <input type="date" class="form-control" name="dob" value=<%= user ? new Date(user.dob).toLocaleDateString() : "" %> id="birth-date"> -->
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" class="form-control" id="email" name="email" value=<%= user ? user.email : "" %> placeholder="Email">
+      </div>
+      <button type="submit" class="btn btn-primary btn-block"><%= user ? "Edit" : "Add" %> User</button>
+    </form>
+  </div>
+<%- include('partials/footer') %>
