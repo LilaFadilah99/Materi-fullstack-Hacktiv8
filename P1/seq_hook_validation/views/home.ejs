@@ -1,6 +1,19 @@
 <%- include('partials/header') %>
 <a class="d-flex justify-content-center" href="/add">Add User</a>
 
+<center>
+  <form action="/search" method="post">
+    <input type="search" name="first_name" placeholder="post search">
+    <input type="submit" value="Search">
+  </form>
+</center>
+<center>
+  <form action="/" method="get">
+    <input type="search" name="first_name" placeholder="get search">
+    <input type="submit" value="Search">
+  </form>
+</center>
+
 <div class="container w-80">  
   <table class="table mb-10">
     <thead>

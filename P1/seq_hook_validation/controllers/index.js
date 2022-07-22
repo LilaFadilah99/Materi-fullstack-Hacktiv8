@@ -1,17 +1,39 @@
 const { User } = require('../models');
+const { Op } = require('sequelize');
 
 class Controller {
   static showAll(req, res) {
-    User.findAll()
-    .then((result) => {
-      // console.log(result);
-      // res.send(result);
-      res.render('home', { users: result });
+    const { first_name } = req.query;
+    // console.log(req.query.first_name, 'req.query');
+    // baru setelah ini, di sequelize method, kita gunakan Op iLike
+    // pakai perkondisian, karena kalau search nya kosong lalu dicari yg kosong
+    // kita ga punya data yang kosong?
+    const opt = {}
+
+    if (first_name) {
+      opt.first_name = {
+        [Op.iLike]: `%${first_name}%`
+      }
+    }
+
+    User.findAll({
+      where: opt
     })
-    .catch((err) => {
-      // console.log(err.message);
-      res.send(err.message);
-    })
+      .then((result) => {
+        // console.log(result);
+        // res.send(result);
+        res.render('home', { users: result });
+      })
+      .catch((err) => {
+        // console.log(err.message);
+        res.send(err.message);
+      })
+  }
+
+  static search(req, res) {
+    const { first_name } = req.body;
+    // console.log(first_name, 'req.body');
+    res.redirect(`/?first_name=${first_name}`);
   }
 
   static formAdd(req, res) {

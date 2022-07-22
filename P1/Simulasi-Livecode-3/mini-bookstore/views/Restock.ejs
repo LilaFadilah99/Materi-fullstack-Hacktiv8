@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restock Book</title>
+</head>
+<body>
+  <center>
+    <h1>Restock Book</h1>
+    <form method="post" action="/books/restock/<%= id %>">
+      <label for="stock">Stock</label><br>
+      <input type="text" name="stock"><br>
+      <br>
+      <input type="submit" value="Restock">
+      <button>
+        <a href="/books/emptyList">Cancel</a>
+      </button>
+    </form>
+  </center>
+</body>
+</html>

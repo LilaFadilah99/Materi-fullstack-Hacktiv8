@@ -56,6 +56,8 @@
 1. bikin file ejs di views untuk menampilkan books
 1. component - h1, table, button (buy, add)
 1. dari controller kirim data books ke ejs list books
+1. lakukan update untuk stock di controller
+1. buat controller untuk get form add
 
 
 ## Release 5
@@ -80,15 +82,36 @@
 
 
 ## Release 6
-
+1. bikin file ejs untuk menampilkan list books yang stock 0
+1. component - h1, table, button restock, button delete
+1. optional kalau mau bikin menggunakan reusable component
 
 
 ## Release 7
+#### GET  /books/restock/:id
+1. bikin controller method get untuk tampilkan form update
+1. method get untuk ambil data 1 book include author sesuai id
+1. bikin file ejs untuk menampilkan form update
+1. component - form, input, label, button (method post, action ke post update)
 
+#### POST  /books/restock/:id
+1. bikin controller method post untuk update data book
+1. ambil inputan dari form melalui request body
+1. ambil inputan id dari request params
+1. method update data sesuai inputan
+1. redirect ke books
 
 
 ## Release 8
-
+1. bikin controller method destroy untuk hapus data
+1. ambil inputan id dari request params
+1. method delete sesuai id
+1. redirect ke empty book list
 
 
 ## Release 9
+1. bikin file di folder helper
+1. buat function untuk mengubah format price
+1. exports function
+1. require helper di app.js untuk jadi global
+1. gunakan helper di file ejs yg membutuhkan
